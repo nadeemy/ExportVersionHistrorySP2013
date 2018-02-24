@@ -1,7 +1,7 @@
 # ExportVersionHistrorySP2013
 
 Export version history can be used to export the version history of SharePoint 201 List items to Microsoft Excel. It provides button in Ribbon to do bulk export.
-
+The WSP file can be downloaded from here: https://github.com/nadeemy/ExportVersionHistrorySP2013/releases/download/1.0/NY.ExportVersionHistory.wsp
 # Deployment steps
 
 **Add Solution using stsadm.exe:**
@@ -25,4 +25,3 @@ For more information please visit http://www.sharepointnadeem.com/2012/07/export
 ## WANT TO SHOW APPRECIATION? 
 
 If you find this tool useful and want to show your appreciation, you can go to my blog [SharePoint Learnings](http://www.sharepointnadeem.com/2012/07/export-version-history-of-sharepoint.html) and click the banners on the blog to visit my blog sponsors or you could spread the word about it on social media sites.
-
