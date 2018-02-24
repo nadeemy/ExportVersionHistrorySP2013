@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<CustomAction
+    Id="ExportVersionHistory"
+	  RegistrationType="ContentType"
+	  RegistrationId="0x01"
+	  Location="CommandUI.Ribbon.ListView"
+	  Rights="ViewVersions">
+		<CommandUIExtension>
+			<CommandUIDefinitions>
+				<CommandUIDefinition
+				 Location="Ribbon.ListItem.Manage.Controls._children">
+					<Button
+					 Id="Ribbon.ListItem.Manage.Controls.ExportVersionHistory"
+					 Alt="Export version history of selected items to Microsoft Excel."
+					 LabelText="Export Version History"
+					 Image16by16="/_layouts/15/images/NY.ExportVersionHistory/Excel_Small.png"
+					 Image32by32="/_layouts/15/images/NY.ExportVersionHistory/Excel_32.gif"
+					 Command="ExportVersionHistory"
+					 Sequence="99"
+					 TemplateAlias="o1"
+					 ToolTipTitle="Export Version History"
+					 ToolTipDescription="Export version history of the selected items to Microsoft Excel."/>
+				</CommandUIDefinition>
+				<CommandUIDefinition
+				 Location="Ribbon.Documents.Manage.Controls._children">
+					<Button
+					 Id="Ribbon.Documents.Manage.Controls.ExportVersionHistory"
+					 Alt="Export version history of selected items to Microsoft Excel."
+					 Image16by16="/_layouts/15/images/NY.ExportVersionHistory/Excel_Small.png"
+					 Image32by32="/_layouts/15/images/NY.ExportVersionHistory/Excel_32.gif"
+					 Command="ExportVersionHistory"
+					 LabelText="Export Version History"
+					 Sequence="99"
+					 TemplateAlias="o1"
+					 ToolTipTitle="Export Version History"
+					 ToolTipDescription="Export version history of the selected items to Microsoft Excel."/>
+				</CommandUIDefinition>
+				<CommandUIDefinition
+				 Location="Ribbon.Calendar.Events.Manage.Controls._children">
+					<Button
+					 Id="Ribbon.Events.Manage.Controls.ExportVersionHistory"
+					 Alt="Export version history of selected items to Microsoft Excel."
+					 Image16by16="/_layouts/15/images/NY.ExportVersionHistory/Excel_Small.png"
+					 Image32by32="/_layouts/15/images/NY.ExportVersionHistory/Excel_32.gif"
+					 Command="ExportVersionHistory"
+					 LabelText="Export Version History"
+					 Sequence="99"
+					 TemplateAlias="o1"
+					 ToolTipTitle="Export Version History"
+					 ToolTipDescription="Export version history of the selected items to Microsoft Excel."/>
+				</CommandUIDefinition>
+			</CommandUIDefinitions>
+			<CommandUIHandlers>
+				<CommandUIHandler
+				 Command="ExportVersionHistory"
+				 CommandAction="javascript:ExportVersionHistory();"
+				 EnabledScript="javascript:ExportVersionHistoryEnable();"/>
+			</CommandUIHandlers>
+		</CommandUIExtension>
+	</CustomAction>
+  <CustomAction
+    Id="ExportViewVersionHistory"
+	  RegistrationType="ContentType"
+	  RegistrationId="0x01"
+	  Location="CommandUI.Ribbon.ListView"
+	  Rights="ViewVersions">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+				 Location="Ribbon.List.Actions.Controls._children">
+          <Button
+					 Id="Ribbon.List.Actions.Controls.ExportViewVersionHistory"
+					 Alt="Export version history of current list view to Microsoft Excel."
+					 LabelText="Export View Version History"
+					 Image16by16="/_layouts/15/images/NY.ExportVersionHistory/Excel_Small.png"
+					 Image32by32="/_layouts/15/images/NY.ExportVersionHistory/Excel_32.gif"
+					 Command="ExportViewVersionHistory"
+					 Sequence="99"
+					 TemplateAlias="o1"
+					 ToolTipTitle="Export View Version History"
+					 ToolTipDescription="Export version history of current list view to Microsoft Excel."/>
+        </CommandUIDefinition>
+        <CommandUIDefinition
+				 Location="Ribbon.Library.Actions.Controls._children">
+          <Button
+					 Id="Ribbon.Library.Actions.Controls.ExportViewVersionHistory"
+					 Alt="Export version history of current list view to Microsoft Excel."
+					 LabelText="Export View Version History"
+					 Image16by16="/_layouts/15/images/NY.ExportVersionHistory/Excel_Small.png"
+					 Image32by32="/_layouts/15/images/NY.ExportVersionHistory/Excel_32.gif"
+					 Command="ExportViewVersionHistory"
+					 Sequence="99"
+					 TemplateAlias="o1"
+					 ToolTipTitle="Export View Version History"
+					 ToolTipDescription="Export version history of current list view to Microsoft Excel."/>
+        </CommandUIDefinition>
+        <CommandUIDefinition
+				 Location="Ribbon.Calendar.Calendar.Actions.Controls._children">
+          <Button
+					 Id="Ribbon.Calendar.Calendar.Actions.Controls.ExportViewVersionHistory"
+					 Alt="Export version history of current list view to Microsoft Excel."
+					 LabelText="Export View Version History"
+					 Image16by16="/_layouts/15/images/NY.ExportVersionHistory/Excel_Small.png"
+					 Image32by32="/_layouts/15/images/NY.ExportVersionHistory/Excel_32.gif"
+					 Command="ExportViewVersionHistory"
+					 Sequence="99"
+					 TemplateAlias="o1"
+					 ToolTipTitle="Export View Version History"
+					 ToolTipDescription="Export version history of current list view to Microsoft Excel."/>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>      
+      <CommandUIHandlers>
+        <CommandUIHandler
+				 Command="ExportViewVersionHistory"
+				 CommandAction="javascript:ExportViewVersionHistory();"
+				 EnabledScript="javascript:ExportVersionHistoryListAndViewEnable();"/>
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+  <CustomAction
+    Id="ExportListVersionHistory"
+	  RegistrationType="ContentType"
+	  RegistrationId="0x01"
+	  Location="CommandUI.Ribbon.ListView"
+	  Rights="ViewVersions">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+				 Location="Ribbon.List.Actions.Controls._children">
+          <Button
+					 Id="Ribbon.List.Actions.Controls.ExportListVersionHistory"
+					 Alt="Export version history of list to Microsoft Excel."
+					 LabelText="Export List Version History"
+					 Image16by16="/_layouts/15/images/NY.ExportVersionHistory/Excel_Small.png"
+					 Image32by32="/_layouts/15/images/NY.ExportVersionHistory/Excel_32.gif"
+					 Command="ExportListVersionHistory"
+					 Sequence="100"
+					 TemplateAlias="o1"
+					 ToolTipTitle="Export List Version History"
+					 ToolTipDescription="Export version history of list to Microsoft Excel."/>
+        </CommandUIDefinition>
+        <CommandUIDefinition
+				 Location="Ribbon.Library.Actions.Controls._children">
+          <Button
+					 Id="Ribbon.Library.Actions.Controls.ExportListVersionHistory"
+					 Alt="Export version history of list to Microsoft Excel."
+					 LabelText="Export List Version History"
+					 Image16by16="/_layouts/15/images/NY.ExportVersionHistory/Excel_Small.png"
+					 Image32by32="/_layouts/15/images/NY.ExportVersionHistory/Excel_32.gif"
+					 Command="ExportListVersionHistory"
+					 Sequence="100"
+					 TemplateAlias="o1"
+					 ToolTipTitle="Export List Version History"
+					 ToolTipDescription="Export version history of list to Microsoft Excel."/>
+        </CommandUIDefinition>
+        <CommandUIDefinition
+				 Location="Ribbon.Calendar.Calendar.Actions.Controls._children">
+          <Button
+					 Id="Ribbon.Calendar.Calendar.Actions.Controls.ExportListVersionHistory"
+					 Alt="Export version history of list to Microsoft Excel."
+					 LabelText="Export List Version History"
+					 Image16by16="/_layouts/15/images/NY.ExportVersionHistory/Excel_Small.png"
+					 Image32by32="/_layouts/15/images/NY.ExportVersionHistory/Excel_32.gif"
+					 Command="ExportListVersionHistory"
+					 Sequence="100"
+					 TemplateAlias="o1"
+					 ToolTipTitle="Export List Version History"
+					 ToolTipDescription="Export version history of list to Microsoft Excel."/>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler
+				 Command="ExportListVersionHistory"
+				 CommandAction="javascript:ExportListVersionHistory();"
+				 EnabledScript="javascript:ExportVersionHistoryListAndViewEnable();"/>
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+  <CustomAction
+    Id="ExportVersionHistory.DisplayForm"
+	  RegistrationType="ContentType"
+	  RegistrationId="0x01"
+	  Location="CommandUI.Ribbon.DisplayForm"
+	  Rights="ViewVersions">
+		<CommandUIExtension>
+			<CommandUIDefinitions>
+				<CommandUIDefinition
+				 Location="Ribbon.ListForm.Display.Manage.Controls._children">
+					<Button
+					 Id="Ribbon.ListForm.Display.Manage.Controls.ExportVersionHistory"
+					 Alt="Export version history of the item to Microsoft Excel."
+					 LabelText="Export Version History"
+					 Image16by16="/_layouts/15/images/NY.ExportVersionHistory/Excel_Small.png"
+					 Image32by32="/_layouts/15/images/NY.ExportVersionHistory/Excel_32.gif"
+					 Command="ExportVersionHistory"
+					 Sequence="99"
+					 TemplateAlias="o1"
+					 ToolTipTitle="Export Version History"
+					 ToolTipDescription="Export version history of the item to Microsoft Excel."/>
+				</CommandUIDefinition>
+			</CommandUIDefinitions>
+			<CommandUIHandlers>
+				<CommandUIHandler
+				 Command="ExportVersionHistory"
+				 CommandAction="~site/_layouts/15/NY.ExportVersionHistory/ExportVersionHistory.aspx?List={ListId}&amp;ID={ItemId}"
+				 EnabledScript="javascript:ExportVersionHistoryDisplayFormEnable();"/>
+			</CommandUIHandlers>
+		</CommandUIExtension>
+	</CustomAction>
+	<CustomAction Id="ExportVersionHistory.Script"
+				  Location="ScriptLink"
+				  ScriptSrc="/_layouts/15/NY.ExportVersionHistory/ExportVersionHistory.js" />
+</Elements>
